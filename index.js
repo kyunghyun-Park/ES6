@@ -1,17 +1,17 @@
-const job = {
-    developer : '개발자'
+
+//default parameter
+function sum(a, b = 0) {
+    console.log(a + b);
 }
 
-console.log(job.developer);
+sum(10);
+sum(10, 20);
 
-const hyun = {
-    age : 27,
-    job : '개발자',
-    baking : {
-        saltBread : 3,
-        cake : 1
-    }
+//rest parameter
+function print(a, b, ...rest) {
+    console.log(a);
+    console.log(b);
+    console.log(rest);
 }
 
-console.log(hyun);
-console.log(hyun.baking);
+print(10, 20, 30, 40, 50, 60, 70);
